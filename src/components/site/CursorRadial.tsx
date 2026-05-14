@@ -35,16 +35,14 @@ export function CursorRadial({
     };
   }, [x, y]);
 
+  const bg = useMotionTemplate`radial-gradient(${size}px circle at ${sx}px ${sy}px, ${color}, transparent 60%)`;
+
   return (
     <motion.div
       ref={ref}
       aria-hidden
       className="pointer-events-none absolute inset-0 z-[1]"
-      style={{
-        background: `radial-gradient(${size}px circle at var(--mx) var(--my), ${color}, transparent 60%)`,
-        ["--mx" as string]: sx,
-        ["--my" as string]: sy,
-      }}
+      style={{ background: bg }}
     />
   );
 }
