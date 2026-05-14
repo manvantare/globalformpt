@@ -50,6 +50,7 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <I18nProvider>
+      <SmoothScroll />
       <div className="min-h-screen bg-background text-foreground">
         <SiteNav />
         <main>
@@ -57,6 +58,8 @@ function Index() {
           <About />
           <Brands />
           <Services />
+          <ExplodedView />
+          <Materials />
           <Projects />
           <Sustainability />
           <PrivateClients />
