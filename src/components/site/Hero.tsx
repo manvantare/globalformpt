@@ -16,6 +16,7 @@ export function Hero() {
         fetchPriority="high"
       />
       <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/25 to-black/75" />
+      <CursorRadial color="rgba(255,255,255,0.18)" size={560} />
 
       <div className="relative z-10 mx-auto flex h-full max-w-[1600px] flex-col px-6 pb-14 pt-32 md:px-10 md:pb-20 md:pt-40">
         <div className="mt-auto max-w-5xl">
