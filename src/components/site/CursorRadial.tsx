@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { motion, useMotionValue, useSpring } from "framer-motion";
+import { motion, useMotionTemplate, useMotionValue, useSpring } from "framer-motion";
 
 /** Cursor-reactive radial gradient overlay. Place inside a relative parent. */
 export function CursorRadial({
