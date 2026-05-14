@@ -2,6 +2,7 @@ import { useState, type FormEvent } from "react";
 import closing from "@/assets/closing.jpg";
 import { useI18n } from "@/lib/i18n";
 import { useReveal } from "@/hooks/use-reveal";
+import { Magnetic } from "./MagneticButton";
 
 export function Contact() {
   const { t } = useI18n();
@@ -64,13 +65,15 @@ export function Contact() {
               <Field label={t("c_email")} name="email" type="email" required />
               <Field label={t("c_company")} name="company" />
               <Field label={t("c_msg")} name="message" textarea required />
-              <button
-                type="submit"
-                className="group mt-8 inline-flex items-center justify-between border border-foreground/80 px-8 py-5 text-[11px] font-medium uppercase tracking-[0.32em] transition hover:bg-foreground hover:text-background"
-              >
-                <span>{t("c_send")}</span>
-                <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
-              </button>
+              <Magnetic>
+                <button
+                  type="submit"
+                  className="group mt-8 inline-flex items-center justify-between gap-10 border border-foreground/80 px-8 py-5 text-[11px] font-medium uppercase tracking-[0.32em] transition hover:bg-foreground hover:text-background"
+                >
+                  <span>{t("c_send")}</span>
+                  <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
+                </button>
+              </Magnetic>
             </form>
           )}
         </div>

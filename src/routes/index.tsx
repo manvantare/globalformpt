@@ -5,12 +5,15 @@ import { Hero } from "@/components/site/Hero";
 import { About } from "@/components/site/About";
 import { Brands } from "@/components/site/Brands";
 import { Services } from "@/components/site/Services";
+import { ExplodedView } from "@/components/site/ExplodedView";
+import { Materials } from "@/components/site/Materials";
 import { Projects } from "@/components/site/Projects";
 import { Sustainability } from "@/components/site/Sustainability";
 import { PrivateClients } from "@/components/site/PrivateClients";
 import { Digital } from "@/components/site/Digital";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
+import { SmoothScroll } from "@/components/site/SmoothScroll";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -47,6 +50,7 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <I18nProvider>
+      <SmoothScroll />
       <div className="min-h-screen bg-background text-foreground">
         <SiteNav />
         <main>
@@ -54,6 +58,8 @@ function Index() {
           <About />
           <Brands />
           <Services />
+          <ExplodedView />
+          <Materials />
           <Projects />
           <Sustainability />
           <PrivateClients />
