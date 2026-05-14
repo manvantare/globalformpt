@@ -111,7 +111,7 @@ export function Services() {
   const items: Array<{
     t: "s1_t" | "s2_t" | "s3_t" | "s4_t";
     d: "s1_d" | "s2_d" | "s3_d" | "s4_d";
-    Glyph: () => JSX.Element;
+    Glyph: () => ReactElement;
   }> = [
     { t: "s1_t", d: "s1_d", Glyph: GlyphQuality },
     { t: "s2_t", d: "s2_d", Glyph: GlyphSpeed },
