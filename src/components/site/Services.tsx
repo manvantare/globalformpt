@@ -1,3 +1,4 @@
+import type { ReactElement } from "react";
 import { useI18n } from "@/lib/i18n";
 import { useReveal } from "@/hooks/use-reveal";
 import { motion } from "framer-motion";
