@@ -1,5 +1,7 @@
 import heroImg from "@/assets/hero.jpg";
 import { useI18n } from "@/lib/i18n";
+import { CursorRadial } from "./CursorRadial";
+import { Magnetic } from "./MagneticButton";
 
 export function Hero() {
   const { t } = useI18n();
