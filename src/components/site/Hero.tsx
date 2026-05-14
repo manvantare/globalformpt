@@ -32,19 +32,23 @@ export function Hero() {
           <div className="mt-10 grid gap-10 md:grid-cols-[1fr_auto] md:items-end">
             <p className="max-w-xl text-base text-bone/70 md:text-lg">{t("hero_sub")}</p>
             <div className="flex flex-wrap items-center gap-4">
-              <a
-                href="#projects"
-                className="group inline-flex items-center gap-3 border border-bone/80 px-7 py-4 text-[11px] font-medium uppercase tracking-[0.32em] text-bone transition hover:bg-bone hover:text-ink"
-              >
-                {t("hero_cta")}
-                <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
-              </a>
-              <a
-                href="#contact"
-                className="link-underline text-[11px] font-medium uppercase tracking-[0.32em] text-bone/80"
-              >
-                {t("hero_cta_2")}
-              </a>
+              <Magnetic>
+                <a
+                  href="#projects"
+                  className="group inline-flex items-center gap-3 border border-bone/80 px-7 py-4 text-[11px] font-medium uppercase tracking-[0.32em] text-bone transition hover:bg-bone hover:text-ink"
+                >
+                  {t("hero_cta")}
+                  <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
+                </a>
+              </Magnetic>
+              <Magnetic strength={0.2}>
+                <a
+                  href="#contact"
+                  className="link-underline text-[11px] font-medium uppercase tracking-[0.32em] text-bone/80"
+                >
+                  {t("hero_cta_2")}
+                </a>
+              </Magnetic>
             </div>
           </div>
         </div>
