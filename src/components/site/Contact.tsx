@@ -2,6 +2,7 @@ import { useState, type FormEvent } from "react";
 import closing from "@/assets/closing.jpg";
 import { useI18n } from "@/lib/i18n";
 import { useReveal } from "@/hooks/use-reveal";
+import { Magnetic } from "./MagneticButton";
 
 export function Contact() {
   const { t } = useI18n();
