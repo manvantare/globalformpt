@@ -42,13 +42,13 @@ export function Contact() {
               </a>
             </div>
             <div>
-              <div className="eyebrow mb-2">Tel</div>
+              <div className="eyebrow mb-2">{t("c_tel")}</div>
               <a className="link-underline font-display text-xl" href="tel:+351000000000">
                 +351 000 000 000
               </a>
             </div>
             <div>
-              <div className="eyebrow mb-2">Atelier</div>
+              <div className="eyebrow mb-2">{t("c_atelier")}</div>
               <p className="font-display text-xl">Lisboa · Porto</p>
             </div>
           </div>
