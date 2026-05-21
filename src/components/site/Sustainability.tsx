@@ -12,7 +12,7 @@ export function Sustainability() {
           <div className="aspect-[4/3] w-full overflow-hidden">
             <img
               src={materialsImg}
-              alt="Premium responsibly sourced materials"
+              alt={t("alt_sustain")}
               width={1600}
               height={1100}
               loading="lazy"

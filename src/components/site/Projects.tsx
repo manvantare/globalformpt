@@ -1,4 +1,4 @@
-import { useI18n } from "@/lib/i18n";
+import { useI18n, type DictKey } from "@/lib/i18n";
 import { useReveal } from "@/hooks/use-reveal";
 import p1 from "@/assets/project-1.jpg";
 import p2 from "@/assets/project-2.jpg";
@@ -8,6 +8,7 @@ type Project = {
   n: string;
   name: string;
   client: string;
+  clientKey?: DictKey;
   location: string;
   year: string;
   image?: string;
@@ -20,8 +21,8 @@ const projects: Project[] = [
   { n: "04", name: "Legacy by the Sea", client: "Reformosa", location: "Sesimbra, PT", year: "2026", image: p3 },
   { n: "05", name: "RCC Alvalade", client: "RCC", location: "Lisboa, PT", year: "2025" },
   { n: "06", name: "Marvilla Collection", client: "RE Capital", location: "Lisboa, PT", year: "2026" },
-  { n: "07", name: "Funchal / Ponta Delgada", client: "18 Apartments", location: "Açores & Madeira, PT", year: "2026" },
-  { n: "08", name: "Hilton", client: "Hospitality", location: "PT", year: "2026" },
+  { n: "07", name: "Funchal / Ponta Delgada", client: "", clientKey: "proj_client_18apt", location: "Açores & Madeira, PT", year: "2026" },
+  { n: "08", name: "Hilton", client: "", clientKey: "proj_client_hospitality", location: "PT", year: "2026" },
 ];
 
 export function Projects() {
@@ -56,7 +57,7 @@ export function Projects() {
                 {p.name}
               </span>
               <span className="col-span-6 col-start-3 text-xs uppercase tracking-[0.24em] text-muted-foreground md:col-span-3 md:col-start-auto md:text-[11px]">
-                {p.client}
+                {p.clientKey ? t(p.clientKey) : p.client}
               </span>
               <span className="col-span-4 hidden text-xs uppercase tracking-[0.24em] text-muted-foreground md:col-span-2 md:block md:text-[11px]">
                 {p.location}
