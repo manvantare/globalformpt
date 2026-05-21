@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useI18n } from "@/lib/i18n";
+import { Logo } from "./Logo";
 
 const links: Array<{ id: string; key: "nav_about" | "nav_brands" | "nav_services" | "nav_projects" | "nav_sustain" | "nav_contact" }> = [
   { id: "studio", key: "nav_about" },
