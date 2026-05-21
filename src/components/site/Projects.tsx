@@ -57,7 +57,7 @@ export function Projects() {
                 {p.name}
               </span>
               <span className="col-span-6 col-start-3 text-xs uppercase tracking-[0.24em] text-muted-foreground md:col-span-3 md:col-start-auto md:text-[11px]">
-                {p.client}
+                {p.clientKey ? t(p.clientKey) : p.client}
               </span>
               <span className="col-span-4 hidden text-xs uppercase tracking-[0.24em] text-muted-foreground md:col-span-2 md:block md:text-[11px]">
                 {p.location}
