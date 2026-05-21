@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useI18n } from "@/lib/i18n";
+import { Logo } from "./Logo";
 
 const links: Array<{ id: string; key: "nav_about" | "nav_brands" | "nav_services" | "nav_projects" | "nav_sustain" | "nav_contact" }> = [
   { id: "studio", key: "nav_about" },
@@ -31,9 +32,8 @@ export function SiteNav() {
       }`}
     >
       <div className="mx-auto flex max-w-[1600px] items-center justify-between px-6 py-5 md:px-10 md:py-6">
-        <a href="#top" className="font-display text-xl tracking-tight md:text-2xl">
-          <span className="font-medium">GLOBAL</span>
-          <span className="opacity-60">FORM</span>
+        <a href="#top" aria-label="Globalform" className="block">
+          <Logo className="h-6 w-auto md:h-7" />
         </a>
 
         <nav className="hidden items-center gap-9 lg:flex">
