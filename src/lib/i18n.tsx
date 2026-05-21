@@ -119,6 +119,12 @@ export const dict = {
   exp_l4: { en: "04 — Acoustic substrate", pt: "04 — Substrato acústico" },
   exp_l5: { en: "05 — Steel frame", pt: "05 — Estrutura em aço" },
 
+  proj_client_hospitality: { en: "Hospitality", pt: "Hotelaria" },
+  proj_client_18apt: { en: "18 Apartments", pt: "18 Apartamentos" },
+
+  alt_hero: { en: "Bespoke architectural interior in concrete and oak", pt: "Interior arquitetónico à medida em betão e carvalho" },
+  alt_sustain: { en: "Premium responsibly sourced materials", pt: "Materiais premium de origem responsável" },
+
   footer_tag: { en: "Bespoke Industrial Solutions", pt: "Soluções Industriais à Medida" },
   footer_rights: { en: "All rights reserved.", pt: "Todos os direitos reservados." },
 } satisfies Dict;
