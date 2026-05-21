@@ -39,11 +39,10 @@ export function ExplodedView() {
         <div className="lg:col-span-4">
           <p className="eyebrow">{t("services_eyebrow")}</p>
           <h2 className="mt-6 font-display text-[clamp(2rem,4vw,3.6rem)] italic leading-[1]">
-            Engineered in layers.
+            {t("exp_title")}
           </h2>
           <p className="mt-6 max-w-sm text-sm leading-relaxed text-muted-foreground">
-            Scroll to disassemble a bespoke wall-system — every millimetre is drawn,
-            sourced and finished in-house.
+            {t("exp_body")}
           </p>
         </div>
 
