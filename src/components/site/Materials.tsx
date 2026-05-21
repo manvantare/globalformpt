@@ -4,53 +4,35 @@ import materials from "@/assets/materials.jpg";
 import p1 from "@/assets/project-1.jpg";
 import p2 from "@/assets/project-2.jpg";
 import p3 from "@/assets/project-3.jpg";
+import { useI18n, type DictKey } from "@/lib/i18n";
 
 type Item = {
   n: string;
-  name: string;
-  caption: string;
+  nameKey: DictKey;
+  captionKey: DictKey;
   image: string;
 };
 
 const items: Item[] = [
-  {
-    n: "M / 01",
-    name: "Smoked European Oak",
-    caption: "Quarter-sawn, hand-finished. Open grain, low sheen.",
-    image: materials,
-  },
-  {
-    n: "M / 02",
-    name: "Brushed Brass",
-    caption: "Solid brass with directional brushing. Ages with intention.",
-    image: p1,
-  },
-  {
-    n: "M / 03",
-    name: "Honed Travertine",
-    caption: "Vein-cut Italian travertine. Matte, soft to the hand.",
-    image: p2,
-  },
-  {
-    n: "M / 04",
-    name: "Patinated Steel",
-    caption: "Cold-rolled steel, hot-blackened. Architectural permanence.",
-    image: p3,
-  },
+  { n: "M / 01", nameKey: "mat_1_n", captionKey: "mat_1_c", image: materials },
+  { n: "M / 02", nameKey: "mat_2_n", captionKey: "mat_2_c", image: p1 },
+  { n: "M / 03", nameKey: "mat_3_n", captionKey: "mat_3_c", image: p2 },
+  { n: "M / 04", nameKey: "mat_4_n", captionKey: "mat_4_c", image: p3 },
 ];
 
 /** Sticky materials reveals — each pane stays as the next slides over it. */
 export function Materials() {
+  const { t } = useI18n();
   return (
     <section id="materials" className="relative bg-background text-foreground hairline-bottom">
       <div className="mx-auto max-w-[1600px] px-6 pt-24 md:px-10 md:pt-36">
         <div className="grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-4">
-            <p className="eyebrow">— Materials</p>
+            <p className="eyebrow">{t("mat_eyebrow")}</p>
           </div>
           <div className="lg:col-span-8">
             <h2 className="font-display text-[clamp(2rem,4.4vw,4rem)] leading-[1.04]">
-              A library of materials, tested for permanence.
+              {t("mat_title")}
             </h2>
           </div>
         </div>
