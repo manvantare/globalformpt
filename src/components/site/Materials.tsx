@@ -48,6 +48,7 @@ export function Materials() {
 }
 
 function Pane({ item, index, total }: { item: Item; index: number; total: number }) {
+  const { t } = useI18n();
   const ref = useRef<HTMLDivElement | null>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -61,7 +62,7 @@ function Pane({ item, index, total }: { item: Item; index: number; total: number
       <div className="relative h-full w-full overflow-hidden">
         <motion.img
           src={item.image}
-          alt={item.name}
+          alt={t(item.nameKey)}
           loading="lazy"
           width={1920}
           height={1280}
@@ -77,10 +78,10 @@ function Pane({ item, index, total }: { item: Item; index: number; total: number
             </span>
           </div>
           <h3 className="mt-6 max-w-3xl font-display text-[clamp(2.2rem,5vw,4.8rem)] italic leading-[1]">
-            {item.name}
+            {t(item.nameKey)}
           </h3>
           <p className="mt-6 max-w-md text-sm leading-relaxed text-bone/75 md:text-base">
-            {item.caption}
+            {t(item.captionKey)}
           </p>
         </div>
       </div>
