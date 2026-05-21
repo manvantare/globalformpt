@@ -22,11 +22,11 @@ export function ExplodedView() {
   const labelsOpacity = useTransform(scrollYProgress, [0.15, 0.4, 0.85, 1], [0, 1, 1, 0]);
 
   const layers: Array<{ y: typeof yA; w: string; tone: string; label: string }> = [
-    { y: yA, w: "78%", tone: "bg-foreground/[0.06] border-foreground/30", label: "01 — Brushed brass inlay" },
-    { y: yB, w: "86%", tone: "bg-foreground/[0.05] border-foreground/25", label: "02 — Smoked oak veneer" },
-    { y: yC, w: "94%", tone: "bg-foreground/[0.04] border-foreground/20", label: "03 — CNC core panel" },
-    { y: yD, w: "88%", tone: "bg-foreground/[0.05] border-foreground/25", label: "04 — Acoustic substrate" },
-    { y: yE, w: "80%", tone: "bg-foreground/[0.06] border-foreground/30", label: "05 — Steel frame" },
+    { y: yA, w: "78%", tone: "bg-foreground/[0.06] border-foreground/30", label: t("exp_l1") },
+    { y: yB, w: "86%", tone: "bg-foreground/[0.05] border-foreground/25", label: t("exp_l2") },
+    { y: yC, w: "94%", tone: "bg-foreground/[0.04] border-foreground/20", label: t("exp_l3") },
+    { y: yD, w: "88%", tone: "bg-foreground/[0.05] border-foreground/25", label: t("exp_l4") },
+    { y: yE, w: "80%", tone: "bg-foreground/[0.06] border-foreground/30", label: t("exp_l5") },
   ];
 
   return (
@@ -39,11 +39,10 @@ export function ExplodedView() {
         <div className="lg:col-span-4">
           <p className="eyebrow">{t("services_eyebrow")}</p>
           <h2 className="mt-6 font-display text-[clamp(2rem,4vw,3.6rem)] italic leading-[1]">
-            Engineered in layers.
+            {t("exp_title")}
           </h2>
           <p className="mt-6 max-w-sm text-sm leading-relaxed text-muted-foreground">
-            Scroll to disassemble a bespoke wall-system — every millimetre is drawn,
-            sourced and finished in-house.
+            {t("exp_body")}
           </p>
         </div>
 
