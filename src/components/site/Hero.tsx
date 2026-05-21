@@ -9,7 +9,7 @@ export function Hero() {
     <section id="top" className="relative h-[100svh] min-h-[680px] w-full overflow-hidden bg-ink text-bone">
       <img
         src={heroImg}
-        alt="Bespoke architectural interior in concrete and oak"
+        alt={t("alt_hero")}
         width={1920}
         height={1280}
         className="absolute inset-0 h-full w-full object-cover"
