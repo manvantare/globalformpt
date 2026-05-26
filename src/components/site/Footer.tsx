@@ -1,4 +1,5 @@
 import { useI18n } from "@/lib/i18n";
+import { Logo } from "./Logo";
 
 export function Footer() {
   const { t } = useI18n();
@@ -6,11 +7,8 @@ export function Footer() {
     <footer className="bg-ink text-bone">
       <div className="mx-auto grid max-w-[1600px] gap-10 px-6 py-14 md:grid-cols-3 md:px-10">
         <div>
-          <p className="font-display text-2xl">
-            <span className="font-medium">GLOBAL</span>
-            <span className="opacity-60">FORM</span>
-          </p>
-          <p className="mt-3 text-[11px] uppercase tracking-[0.32em] text-bone/60">
+          <Logo className="h-7 w-auto text-bone" />
+          <p className="mt-4 text-[11px] uppercase tracking-[0.32em] text-bone/60">
             {t("footer_tag")}
           </p>
         </div>
