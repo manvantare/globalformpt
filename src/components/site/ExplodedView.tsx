@@ -46,8 +46,8 @@ export function ExplodedView() {
           </p>
         </div>
 
-        <div className="relative lg:col-span-8">
-          <div className="relative mx-auto h-[520px] w-full max-w-[640px] md:h-[640px]">
+        <div className="relative lg:col-span-8 overflow-hidden">
+          <div className="relative mx-auto h-[520px] w-full max-w-[560px] md:h-[640px]">
             {layers.map((l, i) => (
               <motion.div
                 key={i}
