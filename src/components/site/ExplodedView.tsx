@@ -22,11 +22,11 @@ export function ExplodedView() {
   const labelsOpacity = useTransform(scrollYProgress, [0.15, 0.4, 0.85, 1], [0, 1, 1, 0]);
 
   const layers: Array<{ y: typeof yA; w: string; tone: string; label: string }> = [
-    { y: yA, w: "78%", tone: "bg-foreground/[0.06] border-foreground/30", label: t("exp_l1") },
-    { y: yB, w: "86%", tone: "bg-foreground/[0.05] border-foreground/25", label: t("exp_l2") },
-    { y: yC, w: "94%", tone: "bg-foreground/[0.04] border-foreground/20", label: t("exp_l3") },
-    { y: yD, w: "88%", tone: "bg-foreground/[0.05] border-foreground/25", label: t("exp_l4") },
-    { y: yE, w: "80%", tone: "bg-foreground/[0.06] border-foreground/30", label: t("exp_l5") },
+    { y: yA, w: "52%", tone: "bg-foreground/[0.06] border-foreground/30", label: t("exp_l1") },
+    { y: yB, w: "60%", tone: "bg-foreground/[0.05] border-foreground/25", label: t("exp_l2") },
+    { y: yC, w: "68%", tone: "bg-foreground/[0.04] border-foreground/20", label: t("exp_l3") },
+    { y: yD, w: "62%", tone: "bg-foreground/[0.05] border-foreground/25", label: t("exp_l4") },
+    { y: yE, w: "54%", tone: "bg-foreground/[0.06] border-foreground/30", label: t("exp_l5") },
   ];
 
   return (
@@ -46,8 +46,8 @@ export function ExplodedView() {
           </p>
         </div>
 
-        <div className="relative lg:col-span-8">
-          <div className="relative mx-auto h-[520px] w-full max-w-[640px] md:h-[640px]">
+        <div className="relative lg:col-span-8 overflow-hidden">
+          <div className="relative mx-auto h-[520px] w-full max-w-[560px] md:h-[640px]">
             {layers.map((l, i) => (
               <motion.div
                 key={i}
