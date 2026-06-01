@@ -37,8 +37,8 @@ export function Contact() {
           <div className="reveal mt-14 space-y-6 text-sm">
             <div>
               <div className="eyebrow mb-2">Email</div>
-              <a className="link-underline font-display text-xl" href="mailto:studio@globalform.pt">
-                studio@globalform.pt
+              <a className="link-underline font-display text-xl" href="mailto:hello@globalform.pt">
+                hello@globalform.pt
               </a>
             </div>
             <div>
