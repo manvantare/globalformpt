@@ -1,6 +1,15 @@
 import materialsImg from "@/assets/materials.jpg";
+import fsc from "@/assets/certs/fsc.png.asset.json";
+import pefc from "@/assets/certs/pefc.png.asset.json";
+import iso from "@/assets/certs/iso14001.png.asset.json";
 import { useI18n } from "@/lib/i18n";
 import { useReveal } from "@/hooks/use-reveal";
+
+const certs = [
+  { k: "FSC", logo: fsc.url },
+  { k: "PEFC", logo: pefc.url },
+  { k: "ISO 14001", logo: iso.url },
+];
 
 export function Sustainability() {
   const { t } = useI18n();
@@ -28,24 +37,19 @@ export function Sustainability() {
           <p className="reveal mt-8 max-w-lg text-base leading-relaxed text-muted-foreground md:text-[17px]">
             {t("sustain_body")}
           </p>
-          <div className="reveal mt-12 flex flex-wrap items-center gap-x-10 gap-y-4">
-            <Cert k="FSC" />
-            <Cert k="PEFC" />
-            <Cert k="ISO 14001" />
+          <div className="reveal mt-12 flex flex-wrap items-center gap-x-12 gap-y-6">
+            {certs.map((c) => (
+              <img
+                key={c.k}
+                src={c.logo}
+                alt={c.k}
+                loading="lazy"
+                className="h-16 w-auto object-contain opacity-70 grayscale brightness-0 invert-[0.55] transition hover:opacity-100 md:h-20"
+              />
+            ))}
           </div>
         </div>
       </div>
     </section>
-  );
-}
-
-function Cert({ k }: { k: string }) {
-  return (
-    <div className="flex items-center gap-3">
-      <span className="flex h-12 w-12 items-center justify-center border border-border font-display text-sm">
-        ✓
-      </span>
-      <span className="font-display text-xl">{k}</span>
-    </div>
   );
 }
