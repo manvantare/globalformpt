@@ -1,5 +1,4 @@
 {
-  "framework": "tanstack-start",
-  "buildCommand": "bun run build",
-  "outputDirectory": ".output"
+  "cleanUrls": true,
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }
