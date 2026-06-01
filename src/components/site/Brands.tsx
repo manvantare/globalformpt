@@ -9,13 +9,13 @@ import electrolux from "@/assets/brands/electrolux.png.asset.json";
 import lg from "@/assets/brands/lg.png.asset.json";
 
 const appliances = [
-  { name: "Gaggenau", logo: gaggenau.url },
-  { name: "Miele", logo: miele.url },
-  { name: "Siemens", logo: siemens.url },
-  { name: "Bosch", logo: bosch.url },
-  { name: "AEG", logo: aeg.url },
-  { name: "Electrolux", logo: electrolux.url },
-  { name: "LG", logo: lg.url },
+  { name: "Gaggenau", logo: gaggenau.url, size: "h-16 md:h-20" },
+  { name: "Miele", logo: miele.url, size: "h-16 md:h-20" },
+  { name: "Siemens", logo: siemens.url, size: "h-16 md:h-20" },
+  { name: "Bosch", logo: bosch.url, size: "h-10 md:h-14" },
+  { name: "AEG", logo: aeg.url, size: "h-10 md:h-14" },
+  { name: "Electrolux", logo: electrolux.url, size: "h-16 md:h-20" },
+  { name: "LG", logo: lg.url, size: "h-16 md:h-20" },
 ];
 const materials = ["Dekton", "Sensa", "Neolith", "Florim", "Compac"];
 
@@ -57,7 +57,7 @@ export function Brands() {
                     src={b.logo}
                     alt={b.name}
                     loading="lazy"
-                    className="h-10 w-auto max-w-full object-contain opacity-60 grayscale brightness-0 invert-[0.55] transition group-hover:opacity-90 md:h-14"
+                    className={`${b.size} w-auto max-w-full object-contain opacity-60 grayscale brightness-0 invert-[0.55] transition group-hover:opacity-90`}
                   />
                 </div>
               ))}
