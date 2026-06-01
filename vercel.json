@@ -1,5 +1,5 @@
 {
-  "framework": "vinxi",
+  "framework": "tanstack-start",
   "buildCommand": "bun run build",
   "outputDirectory": ".output"
 }
