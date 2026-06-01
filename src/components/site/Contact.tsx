@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from "react";
-import closing from "@/assets/closing.jpg";
+import closing from "@/assets/kitchen-contact.jpg";
 import { useI18n } from "@/lib/i18n";
 import { useReveal } from "@/hooks/use-reveal";
 import { Magnetic } from "./MagneticButton";
@@ -22,7 +22,7 @@ export function Contact() {
         width={1920}
         height={1100}
         loading="lazy"
-        className="absolute inset-0 h-full w-full object-cover opacity-15"
+        className="absolute inset-0 h-full w-full object-cover opacity-25"
       />
       <div className="relative mx-auto grid max-w-[1600px] gap-16 px-6 py-24 md:px-10 md:py-36 lg:grid-cols-12">
         <div className="lg:col-span-5">
