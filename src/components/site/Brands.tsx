@@ -57,7 +57,7 @@ export function Brands() {
                     src={b.logo}
                     alt={b.name}
                     loading="lazy"
-                    className="h-8 w-auto max-w-full object-contain opacity-60 grayscale brightness-0 invert-[0.55] transition group-hover:opacity-90 md:h-10"
+                    className="h-10 w-auto max-w-full object-contain opacity-60 grayscale brightness-0 invert-[0.55] transition group-hover:opacity-90 md:h-14"
                   />
                 </div>
               ))}
