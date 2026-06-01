@@ -14,7 +14,7 @@ export function Footer() {
         </div>
         <div className="text-sm text-bone/70">
           <p>Lisboa · Porto</p>
-          <p>studio@globalform.pt</p>
+          <p>hello@globalform.pt</p>
         </div>
         <div className="md:text-right">
           <p className="text-[11px] uppercase tracking-[0.32em] text-bone/60">
