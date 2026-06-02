@@ -1,14 +1,11 @@
 import materialsImg from "@/assets/materials.jpg";
-import fsc from "@/assets/certs/fsc.png.asset.json";
-import pefc from "@/assets/certs/pefc.png.asset.json";
-import iso from "@/assets/certs/iso14001.png.asset.json";
 import { useI18n } from "@/lib/i18n";
 import { useReveal } from "@/hooks/use-reveal";
 
 const certs = [
-  { k: "FSC", logo: fsc.url },
-  { k: "PEFC", logo: pefc.url },
-  { k: "ISO 14001", logo: iso.url },
+  { k: "FSC", logo: "/certs/fsc.png" },
+  { k: "PEFC", logo: "/certs/pefc.png" },
+  { k: "ISO 14001", logo: "/certs/iso14001.png" },
 ];
 
 export function Sustainability() {

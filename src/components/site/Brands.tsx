@@ -1,21 +1,13 @@
 import { useI18n } from "@/lib/i18n";
 import { useReveal } from "@/hooks/use-reveal";
-import gaggenau from "@/assets/brands/gaggenau.png.asset.json";
-import miele from "@/assets/brands/miele.png.asset.json";
-import siemens from "@/assets/brands/siemens.png.asset.json";
-import bosch from "@/assets/brands/bosch.png.asset.json";
-import aeg from "@/assets/brands/aeg.png.asset.json";
-import electrolux from "@/assets/brands/electrolux.png.asset.json";
-import lg from "@/assets/brands/lg.png.asset.json";
-
 const appliances = [
-  { name: "Gaggenau", logo: gaggenau.url, size: "h-16 md:h-20" },
-  { name: "Miele", logo: miele.url, size: "h-16 md:h-20" },
-  { name: "Siemens", logo: siemens.url, size: "h-16 md:h-20" },
-  { name: "Bosch", logo: bosch.url, size: "h-10 md:h-14" },
-  { name: "AEG", logo: aeg.url, size: "h-10 md:h-14" },
-  { name: "Electrolux", logo: electrolux.url, size: "h-16 md:h-20" },
-  { name: "LG", logo: lg.url, size: "h-16 md:h-20" },
+  { name: "Gaggenau", logo: "/brands/gaggenau.png", size: "h-16 md:h-20" },
+  { name: "Miele", logo: "/brands/miele.png", size: "h-16 md:h-20" },
+  { name: "Siemens", logo: "/brands/siemens.png", size: "h-16 md:h-20" },
+  { name: "Bosch", logo: "/brands/bosch.png", size: "h-10 md:h-14" },
+  { name: "AEG", logo: "/brands/aeg.png", size: "h-10 md:h-14" },
+  { name: "Electrolux", logo: "/brands/electrolux.png", size: "h-16 md:h-20" },
+  { name: "LG", logo: "/brands/lg.png", size: "h-16 md:h-20" },
 ];
 const materials = ["Dekton", "Sensa", "Neolith", "Florim", "Compac"];
 
