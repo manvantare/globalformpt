@@ -132,13 +132,13 @@ export const dict = {
 export type DictKey = keyof typeof dict;
 
 const I18nCtx = createContext<{ lang: Lang; setLang: (l: Lang) => void; t: (k: DictKey) => string }>({
-  lang: "en",
+  lang: "pt",
   setLang: () => {},
-  t: (k) => dict[k].en,
+  t: (k) => dict[k].pt,
 });
 
 export function I18nProvider({ children }: { children: ReactNode }) {
-  const [lang, setLang] = useState<Lang>("en");
+  const [lang, setLang] = useState<Lang>("pt");
   const t = (k: DictKey) => dict[k][lang];
   return <I18nCtx.Provider value={{ lang, setLang, t }}>{children}</I18nCtx.Provider>;
 }
