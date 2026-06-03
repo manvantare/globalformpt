@@ -51,19 +51,19 @@ export function SiteNav() {
         <div className="flex items-center gap-6">
           <div className="flex items-center gap-1 text-[11px] font-medium uppercase tracking-[0.32em]">
             <button
-              onClick={() => setLang("en")}
-              className={lang === "en" ? "opacity-100" : "opacity-40 hover:opacity-80"}
-              aria-label="English"
-            >
-              EN
-            </button>
-            <span className="opacity-30">/</span>
-            <button
               onClick={() => setLang("pt")}
               className={lang === "pt" ? "opacity-100" : "opacity-40 hover:opacity-80"}
               aria-label="Português"
             >
               PT
+            </button>
+            <span className="opacity-30">/</span>
+            <button
+              onClick={() => setLang("en")}
+              className={lang === "en" ? "opacity-100" : "opacity-40 hover:opacity-80"}
+              aria-label="English"
+            >
+              EN
             </button>
           </div>
           <button
