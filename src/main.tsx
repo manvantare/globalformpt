@@ -8,7 +8,6 @@ import { Hero } from "@/components/site/Hero";
 import { About } from "@/components/site/About";
 import { Brands } from "@/components/site/Brands";
 import { Services } from "@/components/site/Services";
-import { ExplodedView } from "@/components/site/ExplodedView";
 import { Materials } from "@/components/site/Materials";
 import { Projects } from "@/components/site/Projects";
 import { Sustainability } from "@/components/site/Sustainability";
@@ -32,7 +31,6 @@ function App() {
             <About />
             <Brands />
             <Services />
-            <ExplodedView />
             <Materials />
             <Projects />
             <Sustainability />

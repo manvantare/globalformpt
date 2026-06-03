@@ -100,7 +100,7 @@ export const dict = {
   c_atelier: { en: "Atelier", pt: "Atelier" },
   c_tel: { en: "Tel", pt: "Telefone" },
 
-  mat_eyebrow: { en: "— Materials", pt: "— Materiais" },
+  mat_eyebrow: { en: "03 — Materials", pt: "03 — Materiais" },
   mat_title: { en: "A library of materials, tested for permanence.", pt: "Uma biblioteca de materiais, testada para a permanência." },
   mat_1_n: { en: "Smoked European Oak", pt: "Carvalho Europeu Fumado" },
   mat_1_c: { en: "Quarter-sawn, hand-finished. Open grain, low sheen.", pt: "Corte radial, acabamento manual. Veio aberto, brilho discreto." },
